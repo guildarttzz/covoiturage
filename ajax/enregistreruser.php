@@ -1,4 +1,11 @@
 <?php
+/* On désactive les erreurs tant que les 
+ * fonctions de vérification ne sont pas faites
+ */
+error_reporting(0);
+
+require dirname(dirname(__FILE__)) . '/util/fonctions.php';
+
 $nom = $_REQUEST['nom'];
 $prenom = $_REQUEST['prenom'];
 $mail = $_REQUEST['mail'];
@@ -9,10 +16,10 @@ $tel = $_REQUEST['tel'];
 // générer le mdp travail à faire
 
 
-$login = "jbenoit";
-$mdp = "RT2K";
+$login = substr($prenom, 0, 1).$nom;
+$mdp = keygen(4);
 
 
 
-echo " login : ".$login."<br>Mot de passe : ".$mdp."<br>Merci de votre visite et à bientôt";
+echo "login : ".$login."<br>Mot de passe : ".$mdp."<br>Merci de votre visite et à bientôt";
 ?>

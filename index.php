@@ -1,10 +1,13 @@
 <?php
 require_once 'util/fonctions.php';
 include "vues/entete.html";
-if(!isset($_REQUEST['action']))
+
+if(!isset($_REQUEST['action'])){
     $action = 'accueil';
-else 
+}else{
     $action = $_REQUEST['action'];
+}
+
 switch($action)
 {
     case 'accueil':
@@ -15,23 +18,11 @@ switch($action)
         include "vues/pageinscription.php";
         break;
     case 'gereroffresdepartentreprise':
-        $lesOffres = getLesOffresDepartEntreprise();
+        $lesOffres = getLesOffresDepartEntrepriseParJour();
         include "vues/pageoffresoffertes.php";
         include "vues/pageoffre.php";
         break;
- }
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 ?>
 </body>

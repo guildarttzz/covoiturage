@@ -85,16 +85,7 @@ function getLesOffresDepartEntreprise() {
     return $tab;
 }
 
-/**
- *  Organise la liste des offres dans un tableau à
- *  deux dimensions. Le premier index est le jour
- *  de la semaine, le second est un id auto-
- *  incrémenté.
- *
- *  @author curtis.pelissier@laposte.net
- *
- *  @return array   Le tableau ordonné par jour
- */
+
 function getLesOffresDepartEntrepriseParJour(){
     $base = getLesOffresDepartEntreprise();
     $organized = array();
@@ -110,14 +101,7 @@ function getLesOffresDepartEntrepriseParJour(){
     return $organized;
 }
 
-/**
- *  Génère une clé d'une certaine taille
- *
- *  @author Curtis Pelissier <curtis.pelissier@laposte.net>
- *
- *  @param int $taille la taille de la clé
- *  @return string
- */
+
 function keygen($taille = 32) 
 {
     $str = null;

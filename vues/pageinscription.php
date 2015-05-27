@@ -4,10 +4,10 @@ include "vues/entetepage.html";
 include "vues/logo.html";
 ?>
 <div data-role="content" id="divinscription"> 
-    <form action="#" >
+    <form action="#" rel="external">
      <div data-role="fieldcontain" id ="champsinscription">
         <label for="nom">Nom </label>
-        <input type="text" name="nom" id="nom" value=""   />
+        <input type="text" name="nom" id="nom" value=""  />
         <label for="prenom">Prénom</label>
         <input type="text" name="prenom" id="prenom" value="" />
         <label for="mail">Mail</label>
@@ -29,8 +29,6 @@ include "vues/logo.html";
           <input type="submit" name="submit" id="btninscription" value="Envoyer"  />
      </div>
     </form>
+   
 </div><!-- fin content-->
- <?php
-   include "vues/pied.html";
-?>
 </div><!-- fin page-->

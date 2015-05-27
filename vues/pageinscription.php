@@ -4,16 +4,16 @@ include "vues/entetepage.html";
 include "vues/logo.html";
 ?>
 <div data-role="content" id="divinscription"> 
-    <form action="#" rel="external">
+    <form id="form" action="" rel="external">
      <div data-role="fieldcontain" id ="champsinscription">
         <label for="nom">Nom </label>
-        <input type="text" name="nom" id="nom" value=""  />
+        <input type="text" name="nom" id="nom" value=""   class="required"/><br><br>
         <label for="prenom">Prénom</label>
-        <input type="text" name="prenom" id="prenom" value="" />
+        <input type="text" name="prenom" id="prenom" value=""  class="required"/><br><br>
         <label for="mail">Mail</label>
-        <input type="text" name="mail" id="mail" value="" />
+        <input type="text" name="mail" id="mail" value=""  class="required email"/><br><br>
         <label for="tel">téléphone</label>
-        <input type="text" name="tel" id="tel" value=""  />
+        <input type="text" name="tel" id="tel" value="" class="required number"/><br><br>
         <label id="message"></label>
         <fieldset data-role="controlgroup" data-mini="true" data-type="horizontal">
             <legend>Indiquer votre service</legend>
@@ -29,6 +29,6 @@ include "vues/logo.html";
           <input type="submit" name="submit" id="btninscription" value="Envoyer"  />
      </div>
     </form>
-   
+
 </div><!-- fin content-->
 </div><!-- fin page-->

@@ -27,7 +27,10 @@ include "vues/entetepageavecboutonretour.html";
             ?>
         </div>        
             <p>
-                <a   data-role="button" id="btnSupprimer" data-icon="delete">Supprimer</a>
+                <a  data-role="button" id="btnSupprimer" data-icon="delete">Supprimer</a>
+            </p>
+            <p>
+               <a  href="#pageajouteroffre" data-role="button" id="btnAjouter" data-icon="plus" data-inline="true" data-mini="true">Ajouter une offre</a>
             </p>
       </div><!-- /fin content -->    
 <?php    
